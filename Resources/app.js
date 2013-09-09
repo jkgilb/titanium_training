@@ -1,50 +1,34 @@
 var win = Titanium.UI.createWindow({
-	title: 'Label View',
-	backgroundColor: '#FFFFFF',
+	title: 'Image View',
+	backgroundColor: 'purple',
 	exitOnClose: true
 });
 
-var label01 = Titanium.UI.createLabel({
-	text: 'Label 01',
-	top: 0,
-	left: 0,
-	height: 24,
-	width: '100%',
-	textAlign: 'center',
-	color: "#FFFFFF",
-	backgroundColor: "#363F45"
+var imageView01 = Titanium.UI.createImageView({
+	image: "images/mail-logo.png",
+	height: 20,
+	width: 29,
+	top: 24
 });
 
-var label02 = Titanium.UI.createLabel({
-	text: 'Label 02',
-	top: 24,
-	left: 0,
-	height: 36,
-	width: '75%',
-	textAlign: 'left',
-	color: "#000000",
-	backgroundColor: "#FEB41C"
+var imageView02 = Titanium.UI.createImageView({
+	image: "images/mail-logo.png",
+	height: 200,
+	width: 200,
+	top: 50
 });
 
-var label03 = Titanium.UI.createLabel({
-	text: 'Label 03',
-	bottom: 0,
-	height: "25%",
-	width: '75%',
-	textAlign: 'right',
-	font: {fontSize: 36, fontStyle: "italic"},
-	color: "#F1ECB5",
-	backgroundColor: "#371740"
+var imageView03 = Titanium.UI.createImageView({
+	image: "http://hss-prod.hss.aol.com/hss/storage/adam/ae9f26051ac5d8decf899f2101773b22/Jaguar-C-X17-studio01-opt.jpg",
+	height: 200,
+	// width: 200,
+	bottom: 0
 });
 
-var label04 = Titanium.UI.createLabel({
-	text: 'Label 04',
-});
 
-win.add(label01);
-win.add(label02);
-win.add(label03);
-win.add(label04);
+win.add(imageView01);
+win.add(imageView02);
+win.add(imageView03);
 
 win.open();
 
