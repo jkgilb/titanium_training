@@ -1,64 +1,50 @@
-// this sets the background color of the master UIView (when there are no windows/tab groups on it)
-Titanium.UI.setBackgroundColor('#000');
-
-// create tab group
-var tabGroup = Titanium.UI.createTabGroup();
-
-
-//
-// create base UI tab and root window
-//
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
-});
-var tab1 = Titanium.UI.createTab({  
-    icon:'KS_nav_views.png',
-    title:'Tab 1',
-    window:win1
+var win = Titanium.UI.createWindow({
+	title: 'Label View',
+	backgroundColor: '#FFFFFF',
+	exitOnClose: true
 });
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+var label01 = Titanium.UI.createLabel({
+	text: 'Label 01',
+	top: 0,
+	left: 0,
+	height: 24,
+	width: '100%',
+	textAlign: 'center',
+	color: "#FFFFFF",
+	backgroundColor: "#363F45"
 });
 
-win1.add(label1);
-
-//
-// create controls tab and root window
-//
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
+var label02 = Titanium.UI.createLabel({
+	text: 'Label 02',
+	top: 24,
+	left: 0,
+	height: 36,
+	width: '75%',
+	textAlign: 'left',
+	color: "#000000",
+	backgroundColor: "#FEB41C"
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+var label03 = Titanium.UI.createLabel({
+	text: 'Label 03',
+	bottom: 0,
+	height: "25%",
+	width: '75%',
+	textAlign: 'right',
+	font: {fontSize: 36, fontStyle: "italic"},
+	color: "#F1ECB5",
+	backgroundColor: "#371740"
 });
 
-win2.add(label2);
+var label04 = Titanium.UI.createLabel({
+	text: 'Label 04',
+});
 
+win.add(label01);
+win.add(label02);
+win.add(label03);
+win.add(label04);
 
+win.open();
 
-//
-//  add tabs
-//
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
-
-
-// open tab group
-tabGroup.open();
