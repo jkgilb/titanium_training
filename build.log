@@ -1,0 +1,19 @@
+Logfile initialized
+[INFO] logfile = /Users/jodykemsley/Development/mobile/titanium/workspace/01-01/build.log
+[INFO] logfile = /Users/jodykemsley/Development/mobile/titanium/workspace/01-01/build.log
+[DEBUG] /Users/jodykemsley/Library/Application Support/Titanium/mobilesdk/osx/3.1.2.GA/android/builder.py simulator 01-01 /Users/jodykemsley/Development/mobile/androidsdk /Users/jodykemsley/Development/mobile/titanium/workspace/01-01 org.jkemsley.ti0101 3 HVGA
+[DEBUG] /Users/jodykemsley/Library/Application Support/Titanium/mobilesdk/osx/3.1.2.GA/android/builder.py emulator 01-01 /Users/jodykemsley/Development/mobile/androidsdk /Users/jodykemsley/Development/mobile/titanium/workspace/01-01 org.jkemsley.ti0101 3 HVGA armeabi-v7a
+[INFO] Launching Android emulator...one moment
+[INFO] Building 01-01 for Android ... one moment
+[DEBUG] From: /Users/jodykemsley/Development/mobile/androidsdk/tools/emulator
+[DEBUG] SDCard: /Users/jodykemsley/.titanium/android2.sdcard
+[DEBUG] AVD ID: 3
+[DEBUG] AVD Skin: HVGA
+[DEBUG] AVD ABI: armeabi-v7a
+[DEBUG] SDK: /Users/jodykemsley/Development/mobile/androidsdk
+[INFO] Titanium SDK version: 3.1.2 (08/14/13 12:45 5ceaff8)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 0 devices/emulators
+[DEBUG] /Users/jodykemsley/Development/mobile/androidsdk/tools/emulator -avd titanium_3_HVGA_armeabi-v7a -port 5560 -sdcard /Users/jodykemsley/.titanium/titanium_3_HVGA_armeabi-v7a.sdcard -logcat *:d,*,TiAPI:V -no-boot-anim -partition-size 128
+[TRACE] adb devices returned 1 devices/emulators
+[INFO] Android Emulator has exited
